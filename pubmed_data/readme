@@ -10,4 +10,5 @@ https://www.ncbi.nlm.nih.gov/books/NBK25499/
 For retrieving meshes from ids, its better to do 10k ids at each time, save to csv and continue to the next 10k. 
 In total we have 994838 ids for the aforementioned query.
 
-To use the package, first run get_ids and save them in csv file, then run get_meshes.R file.
+To use the package, first run get_ids and save them in csv file, then run get_meshes.R file. 
+The output is the CONCEPT table from OMOP CDM having a new column added to it as a list of pubmed ids. It can be found in csv files with the name 'mapping'.
