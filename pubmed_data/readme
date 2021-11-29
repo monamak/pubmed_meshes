@@ -1,7 +1,7 @@
 
 This package retrieved pubmed ids with their meshes and matches meshes to the concept names in CDM vocabulary.
 
-In order to access the ids, please type the following in your browser:
+In order to access the ids, type the following in your browser:
 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&retmax=1&mindate=2015/01/01&maxdate=2021/12/31&term=claims||EHR||claim||administrative%20claims||electronic%20health%20records||electronic%20health%20record||EMR||electronic%20medical%20record||electronic%20medical%20records||real-world%20safety||real-world%20safety||real-world%20effectiveness||real-world%20effectiveness||RWE||RWD||real-world||real-world
 
 you can modify the query based on your needs. Relevant parameters are defined in the following link:
