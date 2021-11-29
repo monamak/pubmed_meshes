@@ -78,31 +78,22 @@ regmatches(concept_df$concept_name[3:3],gregexpr("(?<=/).*",concept_df$concept_n
 
 # ____________ the function to map
 
-concept_df$pubmedid<-'Null'
 map_concept_mesh <- function(concept_name){
   s <- vector(mode = "list")     # empty list
-  j=-1     #  to add to the list
-  for (i in 1:3){
-  ifelse (regexpr(concept_name, meshes_df[i:i,2])>0, 
+  j=1    #  to add to the list
+  for (i in 1:nrow(meshes_df)){
+  if (regexpr(concept_name, meshes_df[i:i,2])>0) 
           { 
              s[[j]] <- meshes_df[i:i,1]
               j <- j + 1
-          },
-          s[[j]])
-  s}
+          }
+  }
+  s
 }
+
 
 map_concept_mesh('Amylases')
 
 # _______________ go over all concepts
+concept_df$pubmed_id<-'Null'
 concept_df$pubmed_id[1:3] <- lapply(concept_df$concept_name[1:3],map_concept_mesh)
-
-concept_df$concept_name[1:3]
-head(df,2)
-df[1:3,]
-for (i in 1:3) print(meshes_df[i,1])
-
-# test regex
-if (regexpr('Pulmonary', meshes_df$mesh[2:2])>0) concept_df$pubmedid[2:2] <- meshes_df$X0[2:2]
-colnames(concept_df)
-head(concept_df, n=2)
