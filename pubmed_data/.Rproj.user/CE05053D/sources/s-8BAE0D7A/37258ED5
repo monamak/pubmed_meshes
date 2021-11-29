@@ -1,0 +1,26 @@
+{
+    "id": "37258ED5",
+    "path": "~/pubmed_data/get_meshes.R",
+    "project_path": "get_meshes.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1638100128880.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "101,8",
+        "scrollLine": "78"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1638138478,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1638138478243,
+    "read_only": false,
+    "read_only_alternatives": []
+}
